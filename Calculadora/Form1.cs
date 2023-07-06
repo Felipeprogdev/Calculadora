@@ -8,6 +8,7 @@ namespace Calculadora
         static int conta;
         static int primeiro;
         static int segundo;
+        static int zerado;
         public Form1()
         {
             InitializeComponent();
@@ -23,23 +24,83 @@ namespace Calculadora
 
         }
 
+
         private void soma_Click(object sender, EventArgs e)
         {
-            if (texto.Text != null && texto.Text != "+" || texto.Text != "-" || texto.Text != "/" || texto.Text != "*")
+            try
             {
-                if (primeiro != null && texto.Text != "+" || texto.Text != "-" || texto.Text != "/" || texto.Text != "*")
-                    
-                    primeiro = Int32.Parse(texto.Text);
-                    
-                    
-                    if (contas != null)
-                    {
-                        primeiro = conta;
-                    }
+                primeiro = Int32.Parse(texto.Text);
             }
+            catch
+            {
 
-            texto.Text = "+";
-            sinal = "+";
+            }
+            finally
+            {
+                texto.Text = "+";
+                sinal = "+";
+
+                
+            }
+        }
+
+        private void subtracao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                primeiro = Int32.Parse(texto.Text);
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                texto.Text = "-";
+                sinal = "-";
+
+                
+            }
+        }
+
+        private void divisao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                primeiro = Int32.Parse(texto.Text);
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                texto.Text = "/";
+                sinal = "/";
+
+                
+            }
+        }
+
+        private void multiplicacao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                primeiro = Int32.Parse(texto.Text);
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                texto.Text = "*";
+                sinal = "*";
+
+               
+            }
+            
+            
         }
 
         private void zero_Click(object sender, EventArgs e)
@@ -52,7 +113,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+
                 contas = null;
                 texto.Text = "0";
             }
@@ -60,42 +121,6 @@ namespace Calculadora
             else
             {
                 texto.Text = texto.Text + "0";
-            }
-        }
-
-        private void subtracao_Click(object sender, EventArgs e)
-        {
-            primeiro = Int32.Parse(texto.Text);
-            texto.Text = "-";
-            sinal = "-";
-
-            if (contas != null)
-            {
-                primeiro = conta;
-            }
-        }
-
-        private void divisao_Click(object sender, EventArgs e)
-        {
-            primeiro = Int32.Parse(texto.Text);
-            texto.Text = "/";
-            sinal = "/";
-
-            if (contas != null)
-            {
-                primeiro = conta;
-            }
-        }
-
-        private void multiplicacao_Click(object sender, EventArgs e)
-        {
-            primeiro = Int32.Parse(texto.Text);
-            texto.Text = "*";
-            sinal = "*";
-
-            if (contas != null)
-            {
-                primeiro = conta;
             }
         }
 
@@ -108,7 +133,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+
                 contas = null;
                 texto.Text = "1";
             }
@@ -128,7 +153,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+
                 contas = null;
                 texto.Text = "2";
             }
@@ -148,7 +173,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+ 
                 contas = null;
                 texto.Text = "3";
             }
@@ -168,7 +193,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+        
                 contas = null;
                 texto.Text = "4";
             }
@@ -188,7 +213,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+
                 contas = null;
                 texto.Text = "5";
             }
@@ -208,7 +233,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+                
                 contas = null;
                 texto.Text = "6";
             }
@@ -228,7 +253,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+                
                 contas = null;
                 texto.Text = "7";
             }
@@ -248,7 +273,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+               
                 contas = null;
                 texto.Text = "8";
             }
@@ -268,7 +293,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                conta = 0;
+                
                 contas = null;
                 texto.Text = "9";
             }
@@ -281,33 +306,64 @@ namespace Calculadora
 
         private void igual_Click(object sender, EventArgs e)
         {
-            if (texto.Text == "+" || texto.Text == "-" || texto.Text == "/" || texto.Text == "*" || texto.Text != null)
-            {
-
-            }
-            else
+            try
             {
                 segundo = Int32.Parse(texto.Text);
-
-                if (sinal == "+")
-                {
-                    conta = primeiro + segundo;
-                }
-                else if (sinal == "-")
-                {
-                    conta = primeiro - segundo;
-                }
-                else if (sinal == "*")
-                {
-                    conta = primeiro * segundo;
-                }
-                else if (sinal == "/")
-                {
-                    conta = primeiro / segundo;
-                }
-                contas = conta.ToString();
-                texto.Text = conta.ToString();
             }
+            catch
+            {
+                    
+            }
+            finally
+            {
+                if (texto.Text == "+" || texto.Text == "-" || texto.Text == "*" || texto.Text == "/")
+                {
+
+                }
+
+                else
+                {
+                    if (sinal == "+")
+                    {
+                        conta = primeiro + segundo;
+                        segundo = zerado;
+                        primeiro = zerado;
+                        sinal = "n";
+                        contas = conta.ToString();
+                        texto.Text = conta.ToString();
+                    }
+                    else if (sinal == "-")
+                    {
+                        conta = primeiro - segundo;
+                        segundo = zerado;
+                        primeiro = zerado;
+                        sinal = "n";
+                        contas = conta.ToString();
+                        texto.Text = conta.ToString();
+                    }
+                    else if (sinal == "*")
+                    {
+                        conta = primeiro * segundo;
+                        segundo = zerado;
+                        primeiro = zerado;
+                        sinal = "n";
+                        contas = conta.ToString();
+                        texto.Text = conta.ToString();
+                    }
+                    else if (sinal == "/")
+                    {
+                        conta = primeiro / segundo;
+                        segundo = zerado;
+                        primeiro = zerado;
+                        sinal = "n";
+                        contas = conta.ToString();
+                        texto.Text = conta.ToString();
+                    }
+                    
+                }
+                    
+            }
+
 
         }
     }
