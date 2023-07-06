@@ -75,6 +75,7 @@
             subtracao.TabIndex = 4;
             subtracao.Text = "-";
             subtracao.UseVisualStyleBackColor = true;
+            subtracao.Click += subtracao_Click;
             // 
             // divisao
             // 
@@ -85,6 +86,7 @@
             divisao.TabIndex = 5;
             divisao.Text = "/";
             divisao.UseVisualStyleBackColor = true;
+            divisao.Click += divisao_Click;
             // 
             // multiplicacao
             // 
@@ -95,6 +97,7 @@
             multiplicacao.TabIndex = 6;
             multiplicacao.Text = "*";
             multiplicacao.UseVisualStyleBackColor = true;
+            multiplicacao.Click += multiplicacao_Click;
             // 
             // um
             // 
@@ -104,6 +107,7 @@
             um.TabIndex = 7;
             um.Text = "1";
             um.UseVisualStyleBackColor = true;
+            um.Click += um_Click;
             // 
             // dois
             // 
@@ -113,6 +117,7 @@
             dois.TabIndex = 8;
             dois.Text = "2";
             dois.UseVisualStyleBackColor = true;
+            dois.Click += dois_Click;
             // 
             // tres
             // 
@@ -122,6 +127,7 @@
             tres.TabIndex = 9;
             tres.Text = "3";
             tres.UseVisualStyleBackColor = true;
+            tres.Click += tres_Click;
             // 
             // quatro
             // 
@@ -131,6 +137,7 @@
             quatro.TabIndex = 10;
             quatro.Text = "4";
             quatro.UseVisualStyleBackColor = true;
+            quatro.Click += quatro_Click;
             // 
             // cinco
             // 
@@ -140,6 +147,7 @@
             cinco.TabIndex = 11;
             cinco.Text = "5";
             cinco.UseVisualStyleBackColor = true;
+            cinco.Click += cinco_Click;
             // 
             // seis
             // 
@@ -149,6 +157,7 @@
             seis.TabIndex = 12;
             seis.Text = "6";
             seis.UseVisualStyleBackColor = true;
+            seis.Click += seis_Click;
             // 
             // sete
             // 
@@ -158,6 +167,7 @@
             sete.TabIndex = 13;
             sete.Text = "7";
             sete.UseVisualStyleBackColor = true;
+            sete.Click += sete_Click;
             // 
             // oito
             // 
@@ -167,6 +177,7 @@
             oito.TabIndex = 14;
             oito.Text = "8";
             oito.UseVisualStyleBackColor = true;
+            oito.Click += oito_Click;
             // 
             // nove
             // 
@@ -176,6 +187,7 @@
             nove.TabIndex = 15;
             nove.Text = "9";
             nove.UseVisualStyleBackColor = true;
+            nove.Click += nove_Click;
             // 
             // igual
             // 
@@ -185,6 +197,7 @@
             igual.TabIndex = 16;
             igual.Text = "=";
             igual.UseVisualStyleBackColor = true;
+            igual.Click += igual_Click;
             // 
             // zero
             // 
@@ -194,6 +207,7 @@
             zero.TabIndex = 17;
             zero.Text = "0";
             zero.UseVisualStyleBackColor = true;
+            zero.Click += zero_Click;
             // 
             // Form1
             // 
