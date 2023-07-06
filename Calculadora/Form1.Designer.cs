@@ -43,6 +43,7 @@
             oito = new Button();
             nove = new Button();
             igual = new Button();
+            zero = new Button();
             SuspendLayout();
             // 
             // soma
@@ -97,7 +98,7 @@
             // 
             // um
             // 
-            um.Location = new Point(76, 337);
+            um.Location = new Point(82, 305);
             um.Name = "um";
             um.Size = new Size(39, 56);
             um.TabIndex = 7;
@@ -106,7 +107,7 @@
             // 
             // dois
             // 
-            dois.Location = new Point(138, 337);
+            dois.Location = new Point(144, 305);
             dois.Name = "dois";
             dois.Size = new Size(39, 56);
             dois.TabIndex = 8;
@@ -115,7 +116,7 @@
             // 
             // tres
             // 
-            tres.Location = new Point(195, 337);
+            tres.Location = new Point(201, 305);
             tres.Name = "tres";
             tres.Size = new Size(39, 56);
             tres.TabIndex = 9;
@@ -124,7 +125,7 @@
             // 
             // quatro
             // 
-            quatro.Location = new Point(76, 247);
+            quatro.Location = new Point(82, 215);
             quatro.Name = "quatro";
             quatro.Size = new Size(39, 56);
             quatro.TabIndex = 10;
@@ -133,7 +134,7 @@
             // 
             // cinco
             // 
-            cinco.Location = new Point(138, 247);
+            cinco.Location = new Point(144, 215);
             cinco.Name = "cinco";
             cinco.Size = new Size(39, 56);
             cinco.TabIndex = 11;
@@ -142,7 +143,7 @@
             // 
             // seis
             // 
-            seis.Location = new Point(195, 247);
+            seis.Location = new Point(201, 215);
             seis.Name = "seis";
             seis.Size = new Size(39, 56);
             seis.TabIndex = 12;
@@ -151,7 +152,7 @@
             // 
             // sete
             // 
-            sete.Location = new Point(76, 153);
+            sete.Location = new Point(82, 121);
             sete.Name = "sete";
             sete.Size = new Size(39, 56);
             sete.TabIndex = 13;
@@ -160,7 +161,7 @@
             // 
             // oito
             // 
-            oito.Location = new Point(138, 153);
+            oito.Location = new Point(144, 121);
             oito.Name = "oito";
             oito.Size = new Size(39, 56);
             oito.TabIndex = 14;
@@ -169,7 +170,7 @@
             // 
             // nove
             // 
-            nove.Location = new Point(195, 153);
+            nove.Location = new Point(201, 121);
             nove.Name = "nove";
             nove.Size = new Size(39, 56);
             nove.TabIndex = 15;
@@ -185,11 +186,21 @@
             igual.Text = "=";
             igual.UseVisualStyleBackColor = true;
             // 
+            // zero
+            // 
+            zero.Location = new Point(144, 376);
+            zero.Name = "zero";
+            zero.Size = new Size(39, 36);
+            zero.TabIndex = 17;
+            zero.Text = "0";
+            zero.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(348, 494);
+            Controls.Add(zero);
             Controls.Add(igual);
             Controls.Add(nove);
             Controls.Add(oito);
@@ -229,5 +240,6 @@
         private Button oito;
         private Button nove;
         private Button igual;
+        private Button zero;
     }
 }
