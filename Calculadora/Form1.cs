@@ -40,7 +40,7 @@ namespace Calculadora
                 texto.Text = "+";
                 sinal = "+";
 
-                
+
             }
         }
 
@@ -59,7 +59,7 @@ namespace Calculadora
                 texto.Text = "-";
                 sinal = "-";
 
-                
+
             }
         }
 
@@ -78,7 +78,7 @@ namespace Calculadora
                 texto.Text = "/";
                 sinal = "/";
 
-                
+
             }
         }
 
@@ -97,10 +97,10 @@ namespace Calculadora
                 texto.Text = "*";
                 sinal = "*";
 
-               
+
             }
-            
-            
+
+
         }
 
         private void zero_Click(object sender, EventArgs e)
@@ -173,7 +173,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
- 
+
                 contas = null;
                 texto.Text = "3";
             }
@@ -193,7 +193,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-        
+
                 contas = null;
                 texto.Text = "4";
             }
@@ -233,7 +233,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                
+
                 contas = null;
                 texto.Text = "6";
             }
@@ -253,7 +253,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                
+
                 contas = null;
                 texto.Text = "7";
             }
@@ -273,7 +273,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-               
+
                 contas = null;
                 texto.Text = "8";
             }
@@ -293,7 +293,7 @@ namespace Calculadora
 
             else if (contas != null)
             {
-                
+
                 contas = null;
                 texto.Text = "9";
             }
@@ -312,7 +312,7 @@ namespace Calculadora
             }
             catch
             {
-                    
+
             }
             finally
             {
@@ -359,11 +359,16 @@ namespace Calculadora
                         contas = conta.ToString();
                         texto.Text = conta.ToString();
                     }
-                    
+
                 }
-                    
+
             }
 
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -48,172 +48,195 @@
             // 
             // soma
             // 
-            soma.Location = new Point(281, 316);
-            soma.Margin = new Padding(4);
+            soma.BackColor = SystemColors.WindowFrame;
+            soma.Location = new Point(225, 253);
             soma.Name = "soma";
-            soma.Size = new Size(41, 36);
+            soma.Size = new Size(33, 29);
             soma.TabIndex = 0;
             soma.Text = "+";
-            soma.UseVisualStyleBackColor = true;
+            soma.UseVisualStyleBackColor = false;
             soma.Click += soma_Click;
             // 
             // texto
             // 
-            texto.Location = new Point(44, 72);
-            texto.Margin = new Padding(4);
+            texto.BackColor = SystemColors.HotTrack;
+            texto.Location = new Point(35, 58);
             texto.Name = "texto";
-            texto.Size = new Size(266, 31);
+            texto.Size = new Size(214, 27);
             texto.TabIndex = 3;
             texto.TextChanged += textBox1_TextChanged;
             // 
             // subtracao
             // 
-            subtracao.Location = new Point(281, 257);
-            subtracao.Margin = new Padding(4);
+            subtracao.BackColor = SystemColors.WindowFrame;
+            subtracao.Location = new Point(225, 206);
             subtracao.Name = "subtracao";
-            subtracao.Size = new Size(41, 36);
+            subtracao.Size = new Size(33, 29);
             subtracao.TabIndex = 4;
             subtracao.Text = "-";
-            subtracao.UseVisualStyleBackColor = true;
+            subtracao.UseVisualStyleBackColor = false;
             subtracao.Click += subtracao_Click;
             // 
             // divisao
             // 
-            divisao.Location = new Point(281, 376);
-            divisao.Margin = new Padding(4);
+            divisao.BackColor = SystemColors.WindowFrame;
+            divisao.Location = new Point(225, 301);
             divisao.Name = "divisao";
-            divisao.Size = new Size(41, 36);
+            divisao.Size = new Size(33, 29);
             divisao.TabIndex = 5;
             divisao.Text = "/";
-            divisao.UseVisualStyleBackColor = true;
+            divisao.UseVisualStyleBackColor = false;
             divisao.Click += divisao_Click;
             // 
             // multiplicacao
             // 
-            multiplicacao.Location = new Point(281, 432);
-            multiplicacao.Margin = new Padding(4);
+            multiplicacao.BackColor = SystemColors.WindowFrame;
+            multiplicacao.Location = new Point(225, 346);
             multiplicacao.Name = "multiplicacao";
-            multiplicacao.Size = new Size(41, 36);
+            multiplicacao.Size = new Size(33, 29);
             multiplicacao.TabIndex = 6;
             multiplicacao.Text = "*";
-            multiplicacao.UseVisualStyleBackColor = true;
+            multiplicacao.UseVisualStyleBackColor = false;
             multiplicacao.Click += multiplicacao_Click;
             // 
             // um
             // 
-            um.Location = new Point(82, 305);
+            um.BackColor = SystemColors.WindowFrame;
+            um.Location = new Point(66, 244);
+            um.Margin = new Padding(2, 2, 2, 2);
             um.Name = "um";
-            um.Size = new Size(39, 56);
+            um.Size = new Size(31, 45);
             um.TabIndex = 7;
             um.Text = "1";
-            um.UseVisualStyleBackColor = true;
+            um.UseVisualStyleBackColor = false;
             um.Click += um_Click;
             // 
             // dois
             // 
-            dois.Location = new Point(144, 305);
+            dois.BackColor = SystemColors.WindowFrame;
+            dois.Location = new Point(115, 244);
+            dois.Margin = new Padding(2, 2, 2, 2);
             dois.Name = "dois";
-            dois.Size = new Size(39, 56);
+            dois.Size = new Size(31, 45);
             dois.TabIndex = 8;
             dois.Text = "2";
-            dois.UseVisualStyleBackColor = true;
+            dois.UseVisualStyleBackColor = false;
             dois.Click += dois_Click;
             // 
             // tres
             // 
-            tres.Location = new Point(201, 305);
+            tres.BackColor = SystemColors.WindowFrame;
+            tres.Location = new Point(161, 244);
+            tres.Margin = new Padding(2, 2, 2, 2);
             tres.Name = "tres";
-            tres.Size = new Size(39, 56);
+            tres.Size = new Size(31, 45);
             tres.TabIndex = 9;
             tres.Text = "3";
-            tres.UseVisualStyleBackColor = true;
+            tres.UseVisualStyleBackColor = false;
             tres.Click += tres_Click;
             // 
             // quatro
             // 
-            quatro.Location = new Point(82, 215);
+            quatro.BackColor = SystemColors.WindowFrame;
+            quatro.Location = new Point(66, 172);
+            quatro.Margin = new Padding(2, 2, 2, 2);
             quatro.Name = "quatro";
-            quatro.Size = new Size(39, 56);
+            quatro.Size = new Size(31, 45);
             quatro.TabIndex = 10;
             quatro.Text = "4";
-            quatro.UseVisualStyleBackColor = true;
+            quatro.UseVisualStyleBackColor = false;
             quatro.Click += quatro_Click;
             // 
             // cinco
             // 
-            cinco.Location = new Point(144, 215);
+            cinco.BackColor = SystemColors.WindowFrame;
+            cinco.Location = new Point(115, 172);
+            cinco.Margin = new Padding(2, 2, 2, 2);
             cinco.Name = "cinco";
-            cinco.Size = new Size(39, 56);
+            cinco.Size = new Size(31, 45);
             cinco.TabIndex = 11;
             cinco.Text = "5";
-            cinco.UseVisualStyleBackColor = true;
+            cinco.UseVisualStyleBackColor = false;
             cinco.Click += cinco_Click;
             // 
             // seis
             // 
-            seis.Location = new Point(201, 215);
+            seis.BackColor = SystemColors.WindowFrame;
+            seis.Location = new Point(161, 172);
+            seis.Margin = new Padding(2, 2, 2, 2);
             seis.Name = "seis";
-            seis.Size = new Size(39, 56);
+            seis.Size = new Size(31, 45);
             seis.TabIndex = 12;
             seis.Text = "6";
-            seis.UseVisualStyleBackColor = true;
+            seis.UseVisualStyleBackColor = false;
             seis.Click += seis_Click;
             // 
             // sete
             // 
-            sete.Location = new Point(82, 121);
+            sete.BackColor = SystemColors.WindowFrame;
+            sete.Location = new Point(66, 97);
+            sete.Margin = new Padding(2, 2, 2, 2);
             sete.Name = "sete";
-            sete.Size = new Size(39, 56);
+            sete.Size = new Size(31, 45);
             sete.TabIndex = 13;
             sete.Text = "7";
-            sete.UseVisualStyleBackColor = true;
+            sete.UseVisualStyleBackColor = false;
             sete.Click += sete_Click;
             // 
             // oito
             // 
-            oito.Location = new Point(144, 121);
+            oito.BackColor = SystemColors.WindowFrame;
+            oito.Location = new Point(115, 97);
+            oito.Margin = new Padding(2, 2, 2, 2);
             oito.Name = "oito";
-            oito.Size = new Size(39, 56);
+            oito.Size = new Size(31, 45);
             oito.TabIndex = 14;
             oito.Text = "8";
-            oito.UseVisualStyleBackColor = true;
+            oito.UseVisualStyleBackColor = false;
             oito.Click += oito_Click;
             // 
             // nove
             // 
-            nove.Location = new Point(201, 121);
+            nove.BackColor = SystemColors.WindowFrame;
+            nove.Location = new Point(161, 97);
+            nove.Margin = new Padding(2, 2, 2, 2);
             nove.Name = "nove";
-            nove.Size = new Size(39, 56);
+            nove.Size = new Size(31, 45);
             nove.TabIndex = 15;
             nove.Text = "9";
-            nove.UseVisualStyleBackColor = true;
+            nove.UseVisualStyleBackColor = false;
             nove.Click += nove_Click;
             // 
             // igual
             // 
-            igual.Location = new Point(76, 426);
+            igual.BackColor = SystemColors.WindowFrame;
+            igual.Location = new Point(61, 341);
+            igual.Margin = new Padding(2, 2, 2, 2);
             igual.Name = "igual";
-            igual.Size = new Size(158, 56);
+            igual.Size = new Size(126, 45);
             igual.TabIndex = 16;
             igual.Text = "=";
-            igual.UseVisualStyleBackColor = true;
+            igual.UseVisualStyleBackColor = false;
             igual.Click += igual_Click;
             // 
             // zero
             // 
-            zero.Location = new Point(144, 376);
+            zero.BackColor = SystemColors.WindowFrame;
+            zero.Location = new Point(115, 301);
+            zero.Margin = new Padding(2, 2, 2, 2);
             zero.Name = "zero";
-            zero.Size = new Size(39, 36);
+            zero.Size = new Size(31, 29);
             zero.TabIndex = 17;
             zero.Text = "0";
-            zero.UseVisualStyleBackColor = true;
+            zero.UseVisualStyleBackColor = false;
             zero.Click += zero_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(348, 494);
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(278, 395);
             Controls.Add(zero);
             Controls.Add(igual);
             Controls.Add(nove);
@@ -230,9 +253,9 @@
             Controls.Add(subtracao);
             Controls.Add(texto);
             Controls.Add(soma);
-            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
