@@ -29,96 +29,183 @@
         private void InitializeComponent()
         {
             soma = new Button();
-            primeiro_numero = new Label();
-            segundo_numero = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            resultado = new Label();
-            resultado_mostra = new Label();
+            texto = new TextBox();
+            subtracao = new Button();
+            divisao = new Button();
+            multiplicacao = new Button();
+            um = new Button();
+            dois = new Button();
+            tres = new Button();
+            quatro = new Button();
+            cinco = new Button();
+            seis = new Button();
+            sete = new Button();
+            oito = new Button();
+            nove = new Button();
+            igual = new Button();
             SuspendLayout();
             // 
             // soma
             // 
-            soma.Location = new Point(96, 249);
-            soma.Margin = new Padding(4, 4, 4, 4);
+            soma.Location = new Point(281, 316);
+            soma.Margin = new Padding(4);
             soma.Name = "soma";
-            soma.Size = new Size(118, 36);
+            soma.Size = new Size(41, 36);
             soma.TabIndex = 0;
-            soma.Text = "Soma";
+            soma.Text = "+";
             soma.UseVisualStyleBackColor = true;
             soma.Click += soma_Click;
             // 
-            // primeiro_numero
+            // texto
             // 
-            primeiro_numero.AutoSize = true;
-            primeiro_numero.Location = new Point(15, 80);
-            primeiro_numero.Margin = new Padding(4, 0, 4, 0);
-            primeiro_numero.Name = "primeiro_numero";
-            primeiro_numero.Size = new Size(145, 25);
-            primeiro_numero.TabIndex = 1;
-            primeiro_numero.Text = "Primeiro número";
+            texto.Location = new Point(44, 72);
+            texto.Margin = new Padding(4);
+            texto.Name = "texto";
+            texto.Size = new Size(266, 31);
+            texto.TabIndex = 3;
+            texto.TextChanged += textBox1_TextChanged;
             // 
-            // segundo_numero
+            // subtracao
             // 
-            segundo_numero.AutoSize = true;
-            segundo_numero.Location = new Point(15, 136);
-            segundo_numero.Margin = new Padding(4, 0, 4, 0);
-            segundo_numero.Name = "segundo_numero";
-            segundo_numero.Size = new Size(151, 25);
-            segundo_numero.TabIndex = 2;
-            segundo_numero.Text = "Segundo número";
+            subtracao.Location = new Point(281, 257);
+            subtracao.Margin = new Padding(4);
+            subtracao.Name = "subtracao";
+            subtracao.Size = new Size(41, 36);
+            subtracao.TabIndex = 4;
+            subtracao.Text = "-";
+            subtracao.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // divisao
             // 
-            textBox1.Location = new Point(176, 80);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 31);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            divisao.Location = new Point(281, 376);
+            divisao.Margin = new Padding(4);
+            divisao.Name = "divisao";
+            divisao.Size = new Size(41, 36);
+            divisao.TabIndex = 5;
+            divisao.Text = "/";
+            divisao.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // multiplicacao
             // 
-            textBox2.Location = new Point(176, 132);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(155, 31);
-            textBox2.TabIndex = 4;
+            multiplicacao.Location = new Point(281, 432);
+            multiplicacao.Margin = new Padding(4);
+            multiplicacao.Name = "multiplicacao";
+            multiplicacao.Size = new Size(41, 36);
+            multiplicacao.TabIndex = 6;
+            multiplicacao.Text = "*";
+            multiplicacao.UseVisualStyleBackColor = true;
             // 
-            // resultado
+            // um
             // 
-            resultado.AutoSize = true;
-            resultado.Location = new Point(15, 196);
-            resultado.Margin = new Padding(4, 0, 4, 0);
-            resultado.Name = "resultado";
-            resultado.Size = new Size(90, 25);
-            resultado.TabIndex = 5;
-            resultado.Text = "Resultado";
+            um.Location = new Point(76, 337);
+            um.Name = "um";
+            um.Size = new Size(39, 56);
+            um.TabIndex = 7;
+            um.Text = "1";
+            um.UseVisualStyleBackColor = true;
             // 
-            // resultado_mostra
+            // dois
             // 
-            resultado_mostra.AutoSize = true;
-            resultado_mostra.Location = new Point(176, 196);
-            resultado_mostra.Margin = new Padding(4, 0, 4, 0);
-            resultado_mostra.Name = "resultado_mostra";
-            resultado_mostra.Size = new Size(22, 25);
-            resultado_mostra.TabIndex = 6;
-            resultado_mostra.Text = "0";
-            resultado_mostra.Click += resultado_mostra_Click;
+            dois.Location = new Point(138, 337);
+            dois.Name = "dois";
+            dois.Size = new Size(39, 56);
+            dois.TabIndex = 8;
+            dois.Text = "2";
+            dois.UseVisualStyleBackColor = true;
+            // 
+            // tres
+            // 
+            tres.Location = new Point(195, 337);
+            tres.Name = "tres";
+            tres.Size = new Size(39, 56);
+            tres.TabIndex = 9;
+            tres.Text = "3";
+            tres.UseVisualStyleBackColor = true;
+            // 
+            // quatro
+            // 
+            quatro.Location = new Point(76, 247);
+            quatro.Name = "quatro";
+            quatro.Size = new Size(39, 56);
+            quatro.TabIndex = 10;
+            quatro.Text = "4";
+            quatro.UseVisualStyleBackColor = true;
+            // 
+            // cinco
+            // 
+            cinco.Location = new Point(138, 247);
+            cinco.Name = "cinco";
+            cinco.Size = new Size(39, 56);
+            cinco.TabIndex = 11;
+            cinco.Text = "5";
+            cinco.UseVisualStyleBackColor = true;
+            // 
+            // seis
+            // 
+            seis.Location = new Point(195, 247);
+            seis.Name = "seis";
+            seis.Size = new Size(39, 56);
+            seis.TabIndex = 12;
+            seis.Text = "6";
+            seis.UseVisualStyleBackColor = true;
+            // 
+            // sete
+            // 
+            sete.Location = new Point(76, 153);
+            sete.Name = "sete";
+            sete.Size = new Size(39, 56);
+            sete.TabIndex = 13;
+            sete.Text = "7";
+            sete.UseVisualStyleBackColor = true;
+            // 
+            // oito
+            // 
+            oito.Location = new Point(138, 153);
+            oito.Name = "oito";
+            oito.Size = new Size(39, 56);
+            oito.TabIndex = 14;
+            oito.Text = "8";
+            oito.UseVisualStyleBackColor = true;
+            // 
+            // nove
+            // 
+            nove.Location = new Point(195, 153);
+            nove.Name = "nove";
+            nove.Size = new Size(39, 56);
+            nove.TabIndex = 15;
+            nove.Text = "9";
+            nove.UseVisualStyleBackColor = true;
+            // 
+            // igual
+            // 
+            igual.Location = new Point(76, 426);
+            igual.Name = "igual";
+            igual.Size = new Size(158, 56);
+            igual.TabIndex = 16;
+            igual.Text = "=";
+            igual.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(348, 494);
-            Controls.Add(resultado_mostra);
-            Controls.Add(resultado);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(segundo_numero);
-            Controls.Add(primeiro_numero);
+            Controls.Add(igual);
+            Controls.Add(nove);
+            Controls.Add(oito);
+            Controls.Add(sete);
+            Controls.Add(seis);
+            Controls.Add(cinco);
+            Controls.Add(quatro);
+            Controls.Add(tres);
+            Controls.Add(dois);
+            Controls.Add(um);
+            Controls.Add(multiplicacao);
+            Controls.Add(divisao);
+            Controls.Add(subtracao);
+            Controls.Add(texto);
             Controls.Add(soma);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -128,11 +215,19 @@
         #endregion
 
         private Button soma;
-        private Label primeiro_numero;
-        private Label segundo_numero;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label resultado;
-        private Label resultado_mostra;
+        private TextBox texto;
+        private Button subtracao;
+        private Button divisao;
+        private Button multiplicacao;
+        private Button um;
+        private Button dois;
+        private Button tres;
+        private Button quatro;
+        private Button cinco;
+        private Button seis;
+        private Button sete;
+        private Button oito;
+        private Button nove;
+        private Button igual;
     }
 }

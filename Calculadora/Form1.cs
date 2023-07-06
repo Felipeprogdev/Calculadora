@@ -19,7 +19,7 @@ namespace Calculadora
 
         private void soma_Click(object sender, EventArgs e)
         {
-            int primerio = Int32.Parse(textBox1.Text);
+            int primerio = Int32.Parse(texto.Text);
             int segundo = Int32.Parse(textBox2.Text);
             int conta = primerio + segundo;
 
