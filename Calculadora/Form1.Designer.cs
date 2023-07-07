@@ -61,11 +61,11 @@
             // 
             // texto
             // 
-            texto.BackColor = SystemColors.HotTrack;
-            texto.Location = new Point(44, 72);
+            texto.BackColor = Color.DarkSeaGreen;
+            texto.Location = new Point(35, 54);
             texto.Margin = new Padding(4);
             texto.Name = "texto";
-            texto.Size = new Size(266, 31);
+            texto.Size = new Size(259, 31);
             texto.TabIndex = 3;
             texto.TextChanged += textBox1_TextChanged;
             // 
@@ -269,8 +269,8 @@
             Controls.Add(multiplicacao);
             Controls.Add(divisao);
             Controls.Add(subtracao);
-            Controls.Add(texto);
             Controls.Add(soma);
+            Controls.Add(texto);
             Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";

@@ -386,7 +386,6 @@ namespace Calculadora
 
             texto.Text = texto.Text.Remove(a);
 
-            sinal = "";
         }
     }
 }
