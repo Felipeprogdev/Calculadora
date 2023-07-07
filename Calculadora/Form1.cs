@@ -48,7 +48,11 @@ namespace Calculadora
         {
             try
             {
-                primeiro = Int32.Parse(texto.Text);
+                if (primeiro != null)
+                {
+                    primeiro = Int32.Parse(texto.Text);
+                }
+
             }
             catch
             {
@@ -370,6 +374,19 @@ namespace Calculadora
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void deletar_Click(object sender, EventArgs e)
+        {
+            int a = 0;
+            for (int i = 0; i < texto.Text.Length; i++)
+            {
+                a = i;
+            }
+
+            texto.Text = texto.Text.Remove(a);
+
+            sinal = "";
         }
     }
 }

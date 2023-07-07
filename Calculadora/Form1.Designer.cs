@@ -44,14 +44,16 @@
             nove = new Button();
             igual = new Button();
             zero = new Button();
+            deletar = new Button();
             SuspendLayout();
             // 
             // soma
             // 
             soma.BackColor = SystemColors.WindowFrame;
-            soma.Location = new Point(225, 253);
+            soma.Location = new Point(281, 316);
+            soma.Margin = new Padding(4);
             soma.Name = "soma";
-            soma.Size = new Size(33, 29);
+            soma.Size = new Size(41, 36);
             soma.TabIndex = 0;
             soma.Text = "+";
             soma.UseVisualStyleBackColor = false;
@@ -60,18 +62,20 @@
             // texto
             // 
             texto.BackColor = SystemColors.HotTrack;
-            texto.Location = new Point(35, 58);
+            texto.Location = new Point(44, 72);
+            texto.Margin = new Padding(4);
             texto.Name = "texto";
-            texto.Size = new Size(214, 27);
+            texto.Size = new Size(266, 31);
             texto.TabIndex = 3;
             texto.TextChanged += textBox1_TextChanged;
             // 
             // subtracao
             // 
             subtracao.BackColor = SystemColors.WindowFrame;
-            subtracao.Location = new Point(225, 206);
+            subtracao.Location = new Point(281, 256);
+            subtracao.Margin = new Padding(4);
             subtracao.Name = "subtracao";
-            subtracao.Size = new Size(33, 29);
+            subtracao.Size = new Size(41, 36);
             subtracao.TabIndex = 4;
             subtracao.Text = "-";
             subtracao.UseVisualStyleBackColor = false;
@@ -80,9 +84,10 @@
             // divisao
             // 
             divisao.BackColor = SystemColors.WindowFrame;
-            divisao.Location = new Point(225, 301);
+            divisao.Location = new Point(281, 376);
+            divisao.Margin = new Padding(4);
             divisao.Name = "divisao";
-            divisao.Size = new Size(33, 29);
+            divisao.Size = new Size(41, 36);
             divisao.TabIndex = 5;
             divisao.Text = "/";
             divisao.UseVisualStyleBackColor = false;
@@ -91,9 +96,10 @@
             // multiplicacao
             // 
             multiplicacao.BackColor = SystemColors.WindowFrame;
-            multiplicacao.Location = new Point(225, 346);
+            multiplicacao.Location = new Point(281, 436);
+            multiplicacao.Margin = new Padding(4);
             multiplicacao.Name = "multiplicacao";
-            multiplicacao.Size = new Size(33, 29);
+            multiplicacao.Size = new Size(41, 36);
             multiplicacao.TabIndex = 6;
             multiplicacao.Text = "*";
             multiplicacao.UseVisualStyleBackColor = false;
@@ -102,10 +108,10 @@
             // um
             // 
             um.BackColor = SystemColors.WindowFrame;
-            um.Location = new Point(66, 244);
-            um.Margin = new Padding(2, 2, 2, 2);
+            um.Location = new Point(82, 305);
+            um.Margin = new Padding(2);
             um.Name = "um";
-            um.Size = new Size(31, 45);
+            um.Size = new Size(39, 56);
             um.TabIndex = 7;
             um.Text = "1";
             um.UseVisualStyleBackColor = false;
@@ -114,10 +120,10 @@
             // dois
             // 
             dois.BackColor = SystemColors.WindowFrame;
-            dois.Location = new Point(115, 244);
-            dois.Margin = new Padding(2, 2, 2, 2);
+            dois.Location = new Point(144, 305);
+            dois.Margin = new Padding(2);
             dois.Name = "dois";
-            dois.Size = new Size(31, 45);
+            dois.Size = new Size(39, 56);
             dois.TabIndex = 8;
             dois.Text = "2";
             dois.UseVisualStyleBackColor = false;
@@ -126,10 +132,10 @@
             // tres
             // 
             tres.BackColor = SystemColors.WindowFrame;
-            tres.Location = new Point(161, 244);
-            tres.Margin = new Padding(2, 2, 2, 2);
+            tres.Location = new Point(201, 305);
+            tres.Margin = new Padding(2);
             tres.Name = "tres";
-            tres.Size = new Size(31, 45);
+            tres.Size = new Size(39, 56);
             tres.TabIndex = 9;
             tres.Text = "3";
             tres.UseVisualStyleBackColor = false;
@@ -138,10 +144,10 @@
             // quatro
             // 
             quatro.BackColor = SystemColors.WindowFrame;
-            quatro.Location = new Point(66, 172);
-            quatro.Margin = new Padding(2, 2, 2, 2);
+            quatro.Location = new Point(82, 215);
+            quatro.Margin = new Padding(2);
             quatro.Name = "quatro";
-            quatro.Size = new Size(31, 45);
+            quatro.Size = new Size(39, 56);
             quatro.TabIndex = 10;
             quatro.Text = "4";
             quatro.UseVisualStyleBackColor = false;
@@ -150,10 +156,10 @@
             // cinco
             // 
             cinco.BackColor = SystemColors.WindowFrame;
-            cinco.Location = new Point(115, 172);
-            cinco.Margin = new Padding(2, 2, 2, 2);
+            cinco.Location = new Point(144, 215);
+            cinco.Margin = new Padding(2);
             cinco.Name = "cinco";
-            cinco.Size = new Size(31, 45);
+            cinco.Size = new Size(39, 56);
             cinco.TabIndex = 11;
             cinco.Text = "5";
             cinco.UseVisualStyleBackColor = false;
@@ -162,10 +168,10 @@
             // seis
             // 
             seis.BackColor = SystemColors.WindowFrame;
-            seis.Location = new Point(161, 172);
-            seis.Margin = new Padding(2, 2, 2, 2);
+            seis.Location = new Point(201, 215);
+            seis.Margin = new Padding(2);
             seis.Name = "seis";
-            seis.Size = new Size(31, 45);
+            seis.Size = new Size(39, 56);
             seis.TabIndex = 12;
             seis.Text = "6";
             seis.UseVisualStyleBackColor = false;
@@ -174,10 +180,10 @@
             // sete
             // 
             sete.BackColor = SystemColors.WindowFrame;
-            sete.Location = new Point(66, 97);
-            sete.Margin = new Padding(2, 2, 2, 2);
+            sete.Location = new Point(82, 121);
+            sete.Margin = new Padding(2);
             sete.Name = "sete";
-            sete.Size = new Size(31, 45);
+            sete.Size = new Size(39, 56);
             sete.TabIndex = 13;
             sete.Text = "7";
             sete.UseVisualStyleBackColor = false;
@@ -186,10 +192,10 @@
             // oito
             // 
             oito.BackColor = SystemColors.WindowFrame;
-            oito.Location = new Point(115, 97);
-            oito.Margin = new Padding(2, 2, 2, 2);
+            oito.Location = new Point(144, 121);
+            oito.Margin = new Padding(2);
             oito.Name = "oito";
-            oito.Size = new Size(31, 45);
+            oito.Size = new Size(39, 56);
             oito.TabIndex = 14;
             oito.Text = "8";
             oito.UseVisualStyleBackColor = false;
@@ -198,10 +204,10 @@
             // nove
             // 
             nove.BackColor = SystemColors.WindowFrame;
-            nove.Location = new Point(161, 97);
-            nove.Margin = new Padding(2, 2, 2, 2);
+            nove.Location = new Point(201, 121);
+            nove.Margin = new Padding(2);
             nove.Name = "nove";
-            nove.Size = new Size(31, 45);
+            nove.Size = new Size(39, 56);
             nove.TabIndex = 15;
             nove.Text = "9";
             nove.UseVisualStyleBackColor = false;
@@ -210,10 +216,10 @@
             // igual
             // 
             igual.BackColor = SystemColors.WindowFrame;
-            igual.Location = new Point(61, 341);
-            igual.Margin = new Padding(2, 2, 2, 2);
+            igual.Location = new Point(76, 426);
+            igual.Margin = new Padding(2);
             igual.Name = "igual";
-            igual.Size = new Size(126, 45);
+            igual.Size = new Size(158, 56);
             igual.TabIndex = 16;
             igual.Text = "=";
             igual.UseVisualStyleBackColor = false;
@@ -222,21 +228,33 @@
             // zero
             // 
             zero.BackColor = SystemColors.WindowFrame;
-            zero.Location = new Point(115, 301);
-            zero.Margin = new Padding(2, 2, 2, 2);
+            zero.Location = new Point(144, 376);
+            zero.Margin = new Padding(2);
             zero.Name = "zero";
-            zero.Size = new Size(31, 29);
+            zero.Size = new Size(39, 36);
             zero.TabIndex = 17;
             zero.Text = "0";
             zero.UseVisualStyleBackColor = false;
             zero.Click += zero_Click;
             // 
+            // deletar
+            // 
+            deletar.BackColor = SystemColors.WindowFrame;
+            deletar.Location = new Point(281, 202);
+            deletar.Name = "deletar";
+            deletar.Size = new Size(41, 34);
+            deletar.TabIndex = 18;
+            deletar.Text = "<-";
+            deletar.UseVisualStyleBackColor = false;
+            deletar.Click += deletar_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(278, 395);
+            ClientSize = new Size(352, 537);
+            Controls.Add(deletar);
             Controls.Add(zero);
             Controls.Add(igual);
             Controls.Add(nove);
@@ -253,6 +271,7 @@
             Controls.Add(subtracao);
             Controls.Add(texto);
             Controls.Add(soma);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -278,5 +297,6 @@
         private Button nove;
         private Button igual;
         private Button zero;
+        private Button deletar;
     }
 }
